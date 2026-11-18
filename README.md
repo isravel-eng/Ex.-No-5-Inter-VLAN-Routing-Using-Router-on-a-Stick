@@ -1,5 +1,5 @@
 # Ex. No: 5 Inter-VLAN Routing Using Router-on-a-Stick
-# Date:
+# Date: 18-11-2026
 ________________________________________
 # Objective
 To configure Inter-VLAN routing using a single router interface with subinterfaces (Router-on-a-Stick) so that hosts in different VLANs can communicate with each other.
@@ -12,6 +12,10 @@ ________________________________________
 •	Straight-through Ethernet cables<br>
 ________________________________________
 # Network Topology Diagram
+
+<img width="1302" height="1077" alt="image" src="https://github.com/user-attachments/assets/e8103d66-f1d5-463c-98be-9880e1a4772f" />
+
+---
 # Description:
 •	PC0 and PC1 belong to VLAN 10 (192.168.10.0/24)<br>
 •	PC2 and PC3 belong to VLAN 20 (192.168.20.0/24)<br>
@@ -86,10 +90,25 @@ Router(config)# interface gigabitethernet0/0<br>
 Router(config-if)# no shutdown<br>
 ________________________________________
 # Output (Screenshots)
+
+<img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/8597c06e-cb21-48d0-9291-2eb866d9952e" />
+
 •	VLAN configuration on the switch<br>
+
+<img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/c290e2bb-eb8e-4a9c-9afb-0b955a94cf1b" />
+
 •	Router subinterface configuration<br>
+
+<img width="1655" height="972" alt="image" src="https://github.com/user-attachments/assets/b94ab88e-ec2f-4cc9-aea2-077404ab2286" />
+
 •	PC IP settings<br>
+
+<img width="1495" height="1040" alt="image" src="https://github.com/user-attachments/assets/d94d30b1-e548-400a-ac53-814b3b00bccb" />
+
 •	Successful ping between PCs in different VLANs after routing<br>
+
+<img width="1915" height="1077" alt="image" src="https://github.com/user-attachments/assets/6bee2a31-5fda-4ab6-b13c-252fe24ca636" />
+
 •	Successful ping between PCs in the same VLAN<br>
 ________________________________________
 # Result
